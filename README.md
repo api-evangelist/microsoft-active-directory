@@ -10,7 +10,7 @@ Microsoft Active Directory (AD) is a directory service developed by Microsoft fo
 ## Timestamps
 
 - **Created:** 2024 
-- **Modified:** 2024 
+- **Modified:** 2026-04-28 
 
 ## APIs
 
