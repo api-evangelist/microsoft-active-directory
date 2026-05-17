@@ -71,7 +71,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.microsoft.com/en-us/powershell/module/activedirectory/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser
       - type: Examples
         url: https://docs.microsoft.com/en-us/powershell/scripting/samples/sample-scripts-for-administration
@@ -97,9 +97,9 @@ maintainers:
     email: support@microsoft.com
     url: https://www.microsoft.com
 common:
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.microsoft.com/en-us/servicesagreement
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Service Status
     url: https://status.azure.com/
