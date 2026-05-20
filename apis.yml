@@ -97,6 +97,8 @@ maintainers:
     email: support@microsoft.com
     url: https://www.microsoft.com
 common:
+  - type: GitHubOrganization
+    url: https://github.com/microsoft
   - type: TermsOfService
     url: https://www.microsoft.com/en-us/servicesagreement
   - type: PrivacyPolicy
