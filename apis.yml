@@ -97,6 +97,12 @@ maintainers:
     email: support@microsoft.com
     url: https://www.microsoft.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/microsoft-active-directory-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/microsoft-active-directory-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-active-directory-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-active-directory-scopes.yml
   - type: GitHubOrganization
