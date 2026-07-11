@@ -97,6 +97,8 @@ maintainers:
     email: support@microsoft.com
     url: https://www.microsoft.com
 common:
+  - type: OAuthScopes
+    url: scopes/microsoft-active-directory-scopes.yml
   - type: GitHubOrganization
     url: https://github.com/microsoft
   - type: TermsOfService
