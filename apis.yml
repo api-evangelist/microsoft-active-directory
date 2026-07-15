@@ -97,6 +97,8 @@ maintainers:
     email: support@microsoft.com
     url: https://www.microsoft.com
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-active-directory-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/microsoft-active-directory-vulnerability-disclosure.yml
   - type: DomainSecurity
