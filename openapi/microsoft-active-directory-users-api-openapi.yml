@@ -1,0 +1,116 @@
+openapi: 3.1.0
+info:
+  title: Microsoft Active Directory (via Microsoft Graph) Applications Users API
+  description: 'Microsoft Active Directory / Microsoft Entra ID identity resources are
+
+    accessed through the Microsoft Graph REST API at
+
+    https://graph.microsoft.com. This specification covers core directory
+
+    operations: users, groups, applications, service principals, directory
+
+    roles, and group membership. Authentication is via Microsoft Entra ID
+
+    OAuth 2.0 bearer tokens.
+
+    '
+  version: '1.0'
+  contact:
+    name: Microsoft Graph (Entra ID)
+    url: https://docs.microsoft.com/en-us/graph/api/overview
+servers:
+- url: https://graph.microsoft.com/v1.0
+  description: Microsoft Graph v1.0
+security:
+- oauth2: []
+tags:
+- name: Users
+paths:
+  /users:
+    get:
+      tags:
+      - Users
+      summary: List users in the directory
+      parameters:
+      - in: query
+        name: $filter
+        schema:
+          type: string
+      - in: query
+        name: $select
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Users
+    post:
+      tags:
+      - Users
+      summary: Create a user
+      responses:
+        '201':
+          description: User created
+  /users/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Users
+      summary: Get a user
+      responses:
+        '200':
+          description: User
+    patch:
+      tags:
+      - Users
+      summary: Update a user
+      responses:
+        '204':
+          description: Updated
+    delete:
+      tags:
+      - Users
+      summary: Delete a user
+      responses:
+        '204':
+          description: Deleted
+  /users/{id}/memberOf:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Users
+      summary: List groups and directory roles the user is a member of
+      responses:
+        '200':
+          description: Memberships
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft Entra ID OAuth 2.0
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            User.Read.All: Read all users
+            User.ReadWrite.All: Read and write all users
+            Group.Read.All: Read all groups
+            Group.ReadWrite.All: Read and write all groups
+            Application.Read.All: Read all applications
+            Application.ReadWrite.All: Read and write all applications
+            Directory.Read.All: Read directory data
+            Directory.ReadWrite.All: Read and write directory data
+        clientCredentials:
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            https://graph.microsoft.com/.default: Use app-registered Graph permissions
