@@ -1,0 +1,22 @@
+{
+  "provider": "microsoft-active-directory",
+  "sources": [
+    "microsoft-active-directory-applications-api-openapi.yml",
+    "microsoft-active-directory-directory-roles-api-openapi.yml",
+    "microsoft-active-directory-groups-api-openapi.yml",
+    "microsoft-active-directory-service-principals-api-openapi.yml",
+    "microsoft-active-directory-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-active-directory-applications-api-openapi.yml",
+    "microsoft-active-directory-directory-roles-api-openapi.yml",
+    "microsoft-active-directory-groups-api-openapi.yml",
+    "microsoft-active-directory-service-principals-api-openapi.yml",
+    "microsoft-active-directory-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
