@@ -24,6 +24,14 @@ tags:
   - Directory Services
   - Enterprise
   - Identity
+  - LDAP
+  - Windows
+tags_raw:
+  - Authentication
+  - Authorization
+  - Directory Services
+  - Enterprise
+  - Identity
   - Ldap
   - Windows
 apis:
@@ -34,6 +42,11 @@ apis:
     https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/lightweight-directory-access-protocol-ldap-api
   baseURL: ldap://[domain-controller]:389
   tags:
+  - Directory
+  - LDAP
+  - Protocol
+  - Query
+  tags_raw:
   - Directory
   - Ldap
   - Protocol
@@ -50,6 +63,11 @@ apis:
   description: PowerShell cmdlets for managing Active Directory Domain Services.
   humanURL: https://docs.microsoft.com/en-us/powershell/module/activedirectory/
   tags:
+  - Administration
+  - Automation
+  - PowerShell
+  - Scripting
+  tags_raw:
   - Administration
   - Automation
   - Powershell
@@ -70,6 +88,11 @@ apis:
   - Azure
   - Deprecated
   - Legacy
+  - REST
+  tags_raw:
+  - Azure
+  - Deprecated
+  - Legacy
   - Rest
   properties:
   - type: Documentation
@@ -84,6 +107,8 @@ apis:
   humanURL: https://docs.microsoft.com/en-us/graph/overview
   baseURL: https://graph.microsoft.com
   tags:
+  - Application
+  tags_raw:
   - Applications
   properties:
   - type: OpenAPI
@@ -121,6 +146,8 @@ apis:
   humanURL: https://docs.microsoft.com/en-us/graph/overview
   baseURL: https://graph.microsoft.com
   tags:
+  - Group
+  tags_raw:
   - Groups
   properties:
   - type: OpenAPI
@@ -158,6 +185,8 @@ apis:
   humanURL: https://docs.microsoft.com/en-us/graph/overview
   baseURL: https://graph.microsoft.com
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
