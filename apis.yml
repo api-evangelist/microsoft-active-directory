@@ -36,7 +36,7 @@ tags:
   - Directory Services
   - Enterprise
   - Identity
-  - Ldap
+  - LDAP
   - Windows
 tags_raw:
   - Authentication
@@ -55,7 +55,7 @@ apis:
   baseURL: ldap://[domain-controller]:389
   tags:
   - Directory
-  - Ldap
+  - LDAP
   - Protocol
   - Query
   tags_raw:
@@ -77,7 +77,7 @@ apis:
   tags:
   - Administration
   - Automation
-  - Powershell
+  - PowerShell
   - Scripting
   tags_raw:
   - Administration
